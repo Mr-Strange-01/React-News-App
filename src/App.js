@@ -3,6 +3,7 @@ import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from './Components/Navbar';
 import News from './Components/News';
+import { Routes, Route } from "react-router-dom";
 import { BrowserRouter, Routes , Route } from 'react-router-dom';
 import LoadingBar from 'react-top-loading-bar'
 
