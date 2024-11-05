@@ -1,10 +1,8 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class NewsItem extends Component {
-  render() {
-    let { title, description, imageUrl, source, time, author } = this.props;
+const NewsItem = (props) => {
+    let { title, description, imageUrl, source, time, author } = props;
     return (
-      <div>
             <div className="card" style={{width: "18rem"}}>             
                 <img src={imageUrl} className="card-img-top" alt="..." style={{width: "285px", height: "186px"}}/> 
                 <div className="card-body">
@@ -15,7 +13,7 @@ export default class NewsItem extends Component {
                     <p className="card-text"><small className="text-muted">By {author} on {new Date(time).toGMTString()}</small></p>
                 </div>
             </div>
-      </div>
     )
-  }
 }
+
+export default NewsItem
